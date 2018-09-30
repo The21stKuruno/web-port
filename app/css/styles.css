@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input,
+select {
+  vertical-align: middle; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif; }
+
+body {
+  background: #fcfcfc;
+  color: #24292e;
+  line-height: 1.4; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1010px;
+  padding: 0 20px; }
+
+a {
+  color: #24292e;
+  text-decoration: none; }
+
+header {
+  background: #fcfcfc;
+  height: 62px;
+  overflow: hidden;
+  width: 100%; }
+  header nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 100%; }
+  header .nav-item {
+    display: grid; }
+  header .logo {
+    justify-self: start; }
+  header .links {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, auto);
+    justify-self: center; }
+  header .log-reg {
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, auto);
+    justify-self: end; }
+  header img {
+    width: 45px;
+    display: block; }
+  header li {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    height: 100%; }
+  header .or {
+    display: grid;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    height: 100%; }
+  header a {
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s;
+    border-bottom: 2px solid #fcfcfc; }
+    header a:hover {
+      border-bottom: 2px solid #28a745;
+      transition: 0.2s; }
+  header #img-logo {
+    border-bottom: 0; }
+
+main {
+  background: url(https://static.pexels.com/photos/34676/pexels-photo.jpg) no-repeat center center;
+  background-color: #fff;
+  background-size: cover;
+  width: 100%;
+  min-height: 520px;
+  width: 100%; }
+  main h1 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 130px 6rem 0 6rem;
+    text-align: center; }
+
+section.work {
+  padding-top: 70px; }
+  section.work h3 {
+    background: #fcfcfc;
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    top: -12px;
+    position: relative; }
+  section.work span#line {
+    background-color: #ddd;
+    border-bottom: #fff solid 1px;
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%; }
+  section.work .projects {
+    display: grid;
+    grid-column-gap: 1.2rem;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    margin-top: 70px; }
+  section.work figure {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 1.5rem; }
+  section.work img {
+    border-radius: 3px; }
+  section.work p {
+    margin-top: 70px;
+    text-align: center;
+    width: 100%; }

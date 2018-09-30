@@ -1,0 +1,154 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700");
+
+@import "resets";
+@import "variables";
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: $background;
+  color: $black;
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1010px;
+  padding: 0 20px;
+}
+
+// Global
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+// Header
+header {
+  background: $background;
+  height: 62px;
+  overflow: hidden;
+  width: 100%;
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 100%;
+  }
+  .nav-item {
+    display: grid;
+  }
+  .logo {
+    justify-self: start;
+  }
+  .links {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, auto);
+    justify-self: center;
+  }
+  .log-reg {
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, auto);
+    justify-self: end;
+  }
+  img {
+    width: 45px;
+    display: block;
+  }
+  li {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    height: 100%;
+  }
+  .or {
+    display: grid;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    height: 100%;
+  }
+  a {
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s;
+    border-bottom: 2px solid $background;
+    &:hover {
+      border-bottom: 2px solid #28a745;
+      transition: 0.2s;
+    }
+  }
+  #img-logo {
+    border-bottom: 0;
+  }
+}
+
+// Main
+main {
+  background: url(https://static.pexels.com/photos/34676/pexels-photo.jpg)
+    no-repeat center center;
+  background-color: $white;
+  background-size: cover;
+  width: 100%;
+  min-height: 520px;
+  width: 100%;
+  h1 {
+    color: $white;
+    font-size: 2rem;
+    padding: 130px 6rem 0 6rem;
+    text-align: center;
+  }
+}
+
+// Work
+section.work {
+  padding-top: 70px;
+  h3 {
+    background: $background;
+    color: $hr;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    top: -12px;
+    position: relative;
+  }
+  span#line {
+    background-color: #ddd;
+    border-bottom: $white solid 1px;
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 100%;
+  }
+  .projects {
+    display: grid;
+    grid-column-gap: 1.2rem;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    margin-top: 70px;
+  }
+  figure {
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 1.5rem;
+  }
+  img {
+    border-radius: 3px;
+  }
+  p {
+    margin-top: 70px;
+    text-align: center;
+    width: 100%;
+  }
+}
