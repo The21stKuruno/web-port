@@ -29,10 +29,14 @@ a {
 ul {
   list-style: none;
 }
+.pages {
+  min-height: 530px;
+  padding-bottom: 70px;
+}
 
 // Header
 header {
-  background: $background;
+  background: $white;
   height: 62px;
   overflow: hidden;
   width: 100%;
@@ -79,9 +83,9 @@ header {
     align-items: center;
     height: 100%;
     transition: 0.3s;
-    border-bottom: 2px solid $background;
+    border-bottom: 2px solid $white;
     &:hover {
-      border-bottom: 2px solid #28a745;
+      border-bottom: 2px solid $green;
       transition: 0.2s;
     }
   }
@@ -96,7 +100,6 @@ section.main {
   background-color: $white;
   background-size: cover;
   width: 100%;
-  min-height: 520px;
   width: 100%;
   h1 {
     color: $white;
@@ -109,6 +112,7 @@ section.main {
 // Work
 section.work {
   margin-top: 70px;
+  margin-bottom: 70px;
   h3 {
     background: $background;
     color: $black;
@@ -176,11 +180,63 @@ section.work {
   }
 }
 
+// Contact
+section.contact {
+  padding-top: 70px;
+  form {
+    display: grid;
+    grid-gap: 1rem;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 60px 3rem;
+    width: 70%;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-item {
+    display: grid;
+  }
+  .two {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 1rem;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input,
+  textarea,
+  button {
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 12px;
+    width: 100%;
+  }
+  input,
+  textarea {
+    border: 1px solid $border;
+  }
+  button {
+    background: $green;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    min-width: 250px;
+    padding: 10px;
+    width: 30%;
+  }
+}
+
 // Footer
 footer {
   background: $white;
   height: 70px;
-  margin-top: 70px;
   width: 100%;
   div {
     display: grid;
