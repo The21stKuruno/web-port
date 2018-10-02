@@ -17,19 +17,20 @@
   <header>
     <nav class="container">
       <div class="logo nav-item">
-        <a id="img-logo" href="#"><img src="img/logo.png" alt=""></a>
+        <a id="img-logo" href="index.html"><img src="img/logo.png" alt=""></a>
       </div>
-      <ul class="links nav-item">
+      <ul class="menu nav-item">
         <li><a href="index.html">home</a></li>
-        <li><a href="about.html">about</a></li>
+        <li><a href="#about">about</a></li>
         <li><a href="portfolio.html">portfolio</a></li>
         <li><a href="blog.html">blog</a></li>
-        <li><a href="contact.html">contact</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
-      <ul class="log-reg nav-item">
-        <li><a href="#">Log In</a></li>
-        <li><span class="or">|</span></li>
-        <li><a href="#">Register</a></li>
+      <ul class="social-links nav-item">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -40,8 +41,8 @@
         and I love what I do.</h1>
     </div>
   </section>
-  <section class="work container">
-    <span id="line">
+  <section class="work pages container">
+    <span class="line">
       <h3>Some Of My Latest Work</h3>
     </span>
     <div class="projects">
@@ -77,6 +78,62 @@
         Click here.
       </a>
     </p>
+  </section>
+  <section id="about" class="about container">
+    <span class="line">
+      <h3>About Me</h3>
+    </span>
+    <div class="about-box">
+      <div class="box-item">
+        <img src="img/profile-pict.jpg" alt="">
+      </div>
+      <div class="box-item">
+        <h4>Cris Aian Vergara</h4>
+        <h5>Web Designer | Web Developer</h5>
+        <p class="one">I love building and designing web applications while drinking coffee or tea. Watching anime and
+          reading
+          manga is what I do when I'm not coding or programming. For now, I'm living in Daejeon, South Korea.</p>
+        <h4 class="skills">Skills:</h4>
+        <p class="two">Html(5) | Css(3) | Javascript(Jquery, ReactJs) | Php(Laravel)</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact container">
+    <span class="line">
+      <h3>Contact Me</h3>
+    </span>
+    <form action="">
+      <h4>Feel free to shoot me an email (<span>The21stKuruno@yahoo.com</span>), connect on social media (<span>Twitter</span>),
+        or fill out the
+        form below:</h4>
+      <div class="form-item two-column">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email">
+        </div>
+      </div>
+      <div class="form-item two-column">
+        <div>
+          <label for="website">Website</label>
+          <input type="url" id="website">
+        </div>
+        <div>
+          <label for="number">Phone</label>
+          <input type="text" id="number">
+        </div>
+      </div>
+      <div class="form-item">
+        <label for="message">Message</label>
+        <textarea name="" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form-item">
+        <button class="btn" type="submit">Submit Form</button>
+      </div>
+    </form>
   </section>
   <footer>
     <div class="container">

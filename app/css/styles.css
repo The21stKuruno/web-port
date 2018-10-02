@@ -172,9 +172,25 @@ a {
 ul {
   list-style: none; }
 
-.pages {
-  min-height: 530px;
-  padding-bottom: 70px; }
+span.line {
+  background-color: #ddd;
+  border-bottom: #fff solid 1px;
+  display: block;
+  height: 1px;
+  position: relative;
+  width: 100%; }
+
+span h3 {
+  background: #f7f5f6;
+  color: #24292e;
+  font-size: 1.1rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  top: -12px;
+  position: relative; }
 
 header {
   background: #fff;
@@ -183,51 +199,37 @@ header {
   width: 100%; }
   header nav {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, auto);
     height: 100%; }
   header .nav-item {
     display: grid; }
   header .logo {
     justify-self: start; }
-  header .links {
-    grid-gap: 1rem;
+  header .menu {
+    font-size: 1.1rem;
+    grid-gap: 1.2rem;
     grid-template-columns: repeat(5, auto);
     justify-self: center; }
-  header .log-reg {
-    grid-gap: 5px;
-    grid-template-columns: repeat(3, auto);
+  header .social-links {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, auto);
     justify-self: end; }
+  header i {
+    font-size: 1.5rem; }
   header img {
     width: 45px;
     display: block; }
   header li {
     font-size: 1.1rem;
-    text-transform: capitalize;
-    height: 100%; }
-  header .or {
-    display: grid;
-    align-items: center;
-    font-size: 1.7rem;
-    font-weight: 300;
-    height: 100%; }
-  header a {
-    box-sizing: border-box;
-    display: grid;
-    align-items: center;
-    height: 100%;
-    transition: 0.3s;
-    border-bottom: 2px solid #fff; }
-    header a:hover {
-      border-bottom: 2px solid #28a745;
-      transition: 0.2s; }
-  header #img-logo {
-    border-bottom: 0; }
+    text-transform: capitalize; }
 
 section.main {
   background: url(../img/showcase.jpg) no-repeat center center;
-  background-color: #fff;
+  background-color: #f7f5f6;
   background-size: cover;
-  width: 100%;
+  min-height: 445px;
+  padding-bottom: 70px;
   width: 100%; }
   section.main h1 {
     color: #fff;
@@ -237,31 +239,14 @@ section.main {
 
 section.work {
   margin-top: 70px;
-  margin-bottom: 70px; }
-  section.work h3 {
-    background: #f7f5f6;
-    color: #24292e;
-    font-size: 1.1rem;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    max-width: 250px;
-    text-align: center;
-    text-transform: uppercase;
-    top: -12px;
-    position: relative; }
-  section.work span#line {
-    background-color: #ddd;
-    border-bottom: #fff solid 1px;
-    display: block;
-    height: 1px;
-    position: relative;
-    width: 100%; }
+  padding-bottom: 70px; }
   section.work .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 1.5rem;
     margin-top: 70px; }
+  section.work h3 {
+    max-width: 250px; }
   section.work figure {
     background: #fff;
     border-radius: 5px;
@@ -295,34 +280,64 @@ section.work {
     color: #2188ff;
     text-decoration: underline; }
 
+section.about {
+  padding-bottom: 70px; }
+  section.about h3 {
+    max-width: 150px; }
+  section.about .about-box {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 70px; }
+  section.about img {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 100%; }
+  section.about h4 {
+    font-size: 1.7rem; }
+  section.about h5 {
+    font-size: 1.1rem;
+    font-weight: 400; }
+  section.about .skills {
+    margin-top: 70px; }
+  section.about p.one {
+    margin-top: 50px; }
+  section.about p {
+    font-size: 1.1rem; }
+
 section.contact {
-  padding-top: 70px; }
+  margin-bottom: 70px; }
+  section.contact h3 {
+    max-width: 150px; }
+  section.contact h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center; }
   section.contact form {
     display: grid;
-    grid-gap: 1rem;
-    border-radius: 3px;
+    grid-gap: 15px;
     margin: 0 auto;
-    padding: 60px 3rem;
-    width: 70%; }
-  section.contact h1 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-    text-align: center; }
+    width: 80%;
+    padding-top: 70px; }
+  section.contact span {
+    color: #2188ff; }
+  section.contact h4 {
+    margin-bottom: 35px; }
   section.contact .form-item {
     display: grid; }
-  section.contact .two {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 1rem; }
+  section.contact .two-column {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
   section.contact label {
     display: block;
-    margin-bottom: 10px; }
+    margin-bottom: 7px; }
   section.contact input,
   section.contact textarea,
   section.contact button {
     border-radius: 3px;
     box-sizing: border-box;
-    padding: 12px;
+    padding: 8px;
     width: 100%; }
   section.contact input,
   section.contact textarea {
