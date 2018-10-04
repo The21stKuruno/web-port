@@ -262,12 +262,56 @@ section.about {
     margin-bottom: 50px;
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 20px;
   }
   p {
     font-size: 1.1rem;
+  }
+  #find {
+    color: $blue;
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  li {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    width: 40px;
+  }
+  i {
+    color: $white;
+    font-size: 1.5rem;
+  }
+  .box-two li:nth-child(1) {
+    background: #3b5998;
+  }
+  .box-two li:nth-child(2) {
+    background: #55acee;
+  }
+  .box-two li:nth-child(3) {
+    background: #e95950;
+  }
+  .box-two li:nth-child(4) {
+    background: #ff0000;
+  }
+  .box-two li:nth-child(5) {
+    background: #6e5494;
+  }
+  .box-two li:nth-child(6) {
+    background: #007bb5;
+  }
+  #contact-me-section h3 {
+    width: 130px;
   }
 }
 
@@ -358,22 +402,44 @@ footer {
   div {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
+    grid-template-columns: 1fr;
     height: 100%;
-  }
-  .footer-item {
-    display: grid;
   }
   p {
     font-weight: 300;
   }
-  ul {
-    grid-template-columns: repeat(4, auto);
-    grid-column-gap: 1rem;
+}
+
+// Go Top
+a#go-top {
+  box-sizing: border-box;
+  background: rgba(181, 186, 191, 0.7);
+  border-radius: 50%;
+  bottom: 12px;
+  cursor: pointer;
+  display: block;
+  right: 20px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  transition: 0.3s;
+  width: 43px;
+  height: 43px;
+  z-index: 0;
+  &:hover {
+    background: $black;
+    transition: 0.3s;
+  }
+  span {
+    background: $white;
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+    width: 100%;
   }
   i {
-    color: $grey;
-    font-size: 1.4rem;
+    color: $white;
+    display: block;
+    font-size: 1.1rem;
   }
 }
