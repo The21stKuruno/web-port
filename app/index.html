@@ -11,6 +11,8 @@
     crossorigin="anonymous">
   <!-- Css -->
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -19,15 +21,15 @@
       <div class="logo nav-item">
         <a id="img-logo" href="index.html"><img src="img/logo.png" alt=""></a>
       </div>
-      <div class="nav-item burger-icon">
+      <div class="nav-item icon">
         <i class="fas fa-bars"></i>
       </div>
-      <ul class="menu nav-item">
+      <ul id="dropbar" class="menu nav-item">
         <li><a href="index.html">home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="portfolio.html">portfolio</a></li>
         <li><a href="blog.html">blog</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li id="last-li"><a href="#contact">contact</a></li>
       </ul>
       <ul class="social-links nav-item">
         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
