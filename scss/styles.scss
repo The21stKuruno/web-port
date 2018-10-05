@@ -26,6 +26,7 @@ body {
 a {
   color: $black;
   text-decoration: none;
+  transition: 0.3s;
 }
 ul {
   list-style: none;
@@ -146,6 +147,12 @@ header {
   li#last-li {
     border-bottom: 0;
   }
+  a {
+    &:hover {
+      color: $hr;
+      transition: 0.2s;
+    }
+  }
 }
 
 // Main
@@ -180,7 +187,13 @@ section.main {
   a {
     color: $white;
     display: block;
+    font-size: 14px;
     text-align: center;
+    letter-spacing: 2px;
+    &:hover {
+      color: $grey;
+      transition: 0.2s;
+    }
   }
 }
 
@@ -204,6 +217,9 @@ section.work {
     box-sizing: border-box;
     transition: 0.3s;
     padding: 2rem 1.5rem;
+    &:hover {
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.4);
+    }
   }
   img {
     border-radius: 3px;
@@ -233,7 +249,10 @@ section.work {
   }
   #more-projects {
     color: $blue;
-    text-decoration: underline;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -337,8 +356,11 @@ section.contact {
       width: 100%;
     }
   }
-  span {
+  a {
     color: $blue;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   h4 {
     margin-bottom: 35px;
@@ -379,7 +401,12 @@ section.contact {
     margin: 0 auto;
     min-width: 250px;
     padding: 10px;
+    transition: 0.2s;
     width: 30%;
+    &:hover {
+      background: $hoverGreen;
+      transition: 0.2s;
+    }
     @include mQ(600px) {
       width: 100%;
     }
@@ -417,7 +444,7 @@ a#go-top {
   border-radius: 50%;
   bottom: 12px;
   cursor: pointer;
-  display: block;
+  display: none;
   right: 20px;
   padding: 10px;
   position: fixed;

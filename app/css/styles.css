@@ -167,7 +167,8 @@ body {
 
 a {
   color: #24292e;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.3s; }
 
 ul {
   list-style: none; }
@@ -274,6 +275,9 @@ header {
         font-size: 1.2rem; } }
   header li#last-li {
     border-bottom: 0; }
+  header a:hover {
+    color: #666;
+    transition: 0.2s; }
 
 section.main {
   display: grid;
@@ -304,7 +308,12 @@ section.main {
   section.main a {
     color: #fff;
     display: block;
-    text-align: center; }
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px; }
+    section.main a:hover {
+      color: #b5babf;
+      transition: 0.2s; }
 
 section.work {
   padding-top: 35px;
@@ -323,6 +332,8 @@ section.work {
     box-sizing: border-box;
     transition: 0.3s;
     padding: 2rem 1.5rem; }
+    section.work figure:hover {
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.4); }
   section.work img {
     border-radius: 3px;
     display: block;
@@ -347,7 +358,9 @@ section.work {
     width: 100%; }
   section.work #more-projects {
     color: #2188ff;
-    text-decoration: underline; }
+    text-decoration: none; }
+    section.work #more-projects:hover {
+      text-decoration: underline; }
 
 section.about {
   padding-top: 35px;
@@ -425,8 +438,10 @@ section.contact {
     @media screen and (max-width: 768px) {
       section.contact form {
         width: 100%; } }
-  section.contact span {
+  section.contact a {
     color: #2188ff; }
+    section.contact a:hover {
+      text-decoration: underline; }
   section.contact h4 {
     margin-bottom: 35px; }
   section.contact .form-item {
@@ -460,7 +475,11 @@ section.contact {
     margin: 0 auto;
     min-width: 250px;
     padding: 10px;
+    transition: 0.2s;
     width: 30%; }
+    section.contact button:hover {
+      background: #2cba4c;
+      transition: 0.2s; }
     @media screen and (max-width: 600px) {
       section.contact button {
         width: 100%; } }
@@ -489,7 +508,7 @@ a#go-top {
   border-radius: 50%;
   bottom: 12px;
   cursor: pointer;
-  display: block;
+  display: none;
   right: 20px;
   padding: 10px;
   position: fixed;

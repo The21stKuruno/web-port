@@ -1,4 +1,5 @@
 $(function() {
+  setBindings();
   setGoToTop();
   setDropNav();
 });
@@ -17,6 +18,21 @@ function setDropNav() {
   $(window).resize(function() {
     $(".icon").removeClass("active");
     $("#dropbar").removeClass("visible");
+  });
+}
+
+// Navigation Scroll Smooth
+function setBindings() {
+  $(".smooth-scroll").click(function(e) {
+    e.preventDefault();
+    var sectionID = e.currentTarget.id + "-section";
+
+    $("html, body").animate(
+      {
+        scrollTop: $("#" + sectionID).offset().top
+      },
+      1000
+    );
   });
 }
 
