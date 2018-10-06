@@ -249,9 +249,11 @@ section.work {
   }
   #more-projects {
     color: $blue;
-    text-decoration: none;
+    text-decoration: underline;
+    transition: 0.2s;
     &:hover {
-      text-decoration: underline;
+      opacity: 0.8;
+      transition: 0.2s;
     }
   }
 }
@@ -305,11 +307,16 @@ section.about {
     height: 40px;
     margin: 0 5px;
     text-align: center;
+    transition: 0.3s;
     width: 40px;
-  }
-  i {
-    color: $white;
-    font-size: 1.5rem;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+    i {
+      color: $white;
+      font-size: 1.5rem;
+    }
   }
   .box-two li:nth-child(1) {
     background: #3b5998;
